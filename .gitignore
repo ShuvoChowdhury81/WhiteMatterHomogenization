@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+
+runs/
+data/generated/
+models/frobenius/
+models/single_component_retrained/
