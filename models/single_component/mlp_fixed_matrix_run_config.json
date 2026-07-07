@@ -1,0 +1,32 @@
+{
+  "dataset_csv": "data/processed/ml_hgo_dataset_lhs_1000_single_component_pressure_with_interaction_public.csv",
+  "input_columns": [
+    "target_fiber_volume_fraction",
+    "target_mean_diameter_um",
+    "matrix_mu",
+    "matrix_alpha",
+    "fiber_mu",
+    "fiber_alpha",
+    "mu_interaction_feature"
+  ],
+  "target_columns": [
+    "fitted_k1",
+    "fitted_k2"
+  ],
+  "random_seed": 42,
+  "train_fraction": 0.7,
+  "val_fraction": 0.15,
+  "test_fraction": 0.15,
+  "standardize_inputs": true,
+  "standardize_targets": true,
+  "hidden_layer_widths": [
+    64,
+    64,
+    32
+  ],
+  "batch_size": 64,
+  "max_epochs": 4000,
+  "early_stopping_patience": 400,
+  "learning_rate": 0.001,
+  "weight_decay": 1e-05
+}
